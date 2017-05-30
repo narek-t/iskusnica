@@ -1,4 +1,98 @@
-$mainColor: #333;
-$fontFamily: Helvetica, Arial, sans-serif;
-$linkColor: #699;
-$bgColor: #f8f8f8;
+@font-face {
+	font-family: 'DendaNew';
+	src: url('../fonts/DendaNewC-BoldItalic.woff2') format('woff2'),
+		url('../fonts/DendaNewC-BoldItalic.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'DendaNew';
+	src: url('../fonts/DendaNewBlackCondC.woff2') format('woff2'),
+		url('../fonts/DendaNewBlackCondC.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DendaNew';
+	src: url('../fonts/DendaNewC-Bold.woff2') format('woff2'),
+		url('../fonts/DendaNewC-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DendaNew';
+	src: url('../fonts/DendaNewC-Italic.woff2') format('woff2'),
+		url('../fonts/DendaNewC-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'DendaNew';
+	src: url('../fonts/DendaNewLightC-Italic.woff2') format('woff2'),
+		url('../fonts/DendaNewLightC-Italic.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'DendaNew';
+	src: url('../fonts/DendaNewLightC.woff2') format('woff2'),
+		url('../fonts/DendaNewLightC.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DendaNew';
+	src: url('../fonts/DendaNewC.woff2') format('woff2'),
+		url('../fonts/DendaNewC.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+.slick-slide, .slick-slide *{ outline: none !important; }
+//sticky footer
+html, body {
+	height: 100%;
+}
+.all-wrapper {
+	min-height: 100%;
+	margin-bottom: -140px; 
+}
+.all-wrapper:after {
+  content: "";
+  display: block;
+}
+.site-footer, .all-wrapper:after {
+  height: 140px; 
+}
+
+
+$denda: 'DendaNew', serif;
+$lora: 'Lora', serif;
+
+.large-container {
+	max-width: 1720px;
+	margin: auto;
+	padding: 0 10px;
+}
+
+.container {
+	max-width: 1450px;
+	margin: auto;
+	padding: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+

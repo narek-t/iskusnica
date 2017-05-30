@@ -1,4 +1,64 @@
 block header
 
 	header.site-header
-		h1 Blank template for frontend developers
+		.site-header__top
+			.large-container
+				.site-header__top-lcol.cf
+					.site-header__top-address
+						a(href="#") Россия, г. Нижний Новгород, Адрес ?
+					.site-header__top-tel
+						a(href="tel:+7 (831) 233-23-22") +7 (831) 233-23-22
+					.site-header__top-langs
+						.site-header__top-lang.site-header__top-lang--rus.active
+							a(href="#") Рус
+						span.sep |
+						.site-header__top-lang.site-header__top-lang--eng
+							a(href="#") Eng
+				.site-header__top-rcol
+					ul.social__list
+						li(style="background-image: url(img/fb.png)")
+							a(href="#")
+						li(style="background-image: url(img/vk.png)")
+							a(href="#")
+						li(style="background-image: url(img/inst.png)")
+							a(href="#")
+					.site-header__top-login
+						a(href="#") Войти
+						span.sep |
+						a(href="#") Регистрация
+		.site-header__main
+			.large-container
+				.site-header__main--wrapper
+					.site-header__main-lcol
+						a.logo(href="#")
+							img(src="img/logo-home.png", alt="")
+						.site-header__main-slogan
+							span Отдыхайте творчески!
+							span Творите вместе с нами!
+					.site-header__main-rcol
+						.site-header__main-top
+							a.site-header__main-top--item.site-header__main-top--cart(href="#") Корзина: 
+								span пусто
+							.site-header__main-top--item
+								.search-wrapper
+									form(action="")
+										input.search-input(type="text" placeholder="Введите текст")
+										input.submit-btn(type="submit" value="Искать")
+						.site-header__main-menu
+							ul
+								li
+									a(href="#") Каталог товаров
+								li
+									a(href="#") Обратная связь
+								li
+									a(href="#") Вышиваем желания
+								li
+									a(href="#") Документация
+								li
+									a(href="#") Контакты
+								li
+									a(href="#") Доставка и оплата
+
+
+
+
