@@ -21,6 +21,12 @@ block content
 				.container
 					.simple-block__inner
 						h2.simple-block__title Новинки
+						style.
+							/* Delete in wordpress, only for demo */
+							.open-popup {margin-left: 20px;}
+						a.open-popup(href="#subscribe") Popup Подписка
+						a.open-popup(href="#registration") Popup Регистрация
+						a.open-popup(href="#feedback") Popup Обратная связь
 						.simple-block__row
 							.product__item
 								span.product__sku Арт.: 606312
@@ -82,7 +88,7 @@ block content
 					.simple-block__inner
 						h2.simple-block__title Хиты продаж
 						.simple-block__row
-							.product__item
+							.product__item.product__item--discount
 								span.product__sku Арт.: 606312
 								.product__img
 									a.product__img-inner(href="#")

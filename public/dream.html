@@ -103,6 +103,74 @@
         </ul>
       </div>
     </footer>
+    <div id="subscribe" class="popup mfp-hide popup--subscribe">
+      <p class="popup__title">Подпишитесь на Новости</p>
+      <div class="popup__form">
+        <form>
+          <input type="text" placeholder="Ваше Имя" class="popup__input"/>
+          <input type="email" placeholder="Email" class="popup__input"/>
+          <div class="popup__agree">
+            <label>
+              <input type="checkbox"/>Согласен с условиями
+            </label>
+            <label>
+              <input type="checkbox"/>Подписаться на новости и акции
+            </label>
+          </div>
+          <div class="aligner">
+            <input type="submit" value="Подписаться" class="btn submit-btn"/>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="feedback" class="popup mfp-hide">
+      <p class="popup__title">Обратная связь</p>
+      <div class="popup__form">
+        <form>
+          <input type="text" placeholder="Ваше Имя" class="popup__input"/>
+          <input type="email" placeholder="Email" class="popup__input"/>
+          <input type="email" placeholder="Тема Сообщения" class="popup__input"/>
+          <textarea placeholder="Сообщение" class="popup__input popup__input--textarea"></textarea>
+          <div class="popup__captcha"><img src="img/captcha.jpg" alt=""/></div>
+          <div class="aligner">
+            <input type="submit" value="Отправить" class="btn submit-btn"/>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="registration" class="popup mfp-hide popup--registration">
+      <form>
+        <p class="popup__title popup__title--left-aligned">Регистрация</p>
+        <div class="popup--registration__row">
+          <div class="popup--registration__col">
+            <input type="text" placeholder="Ваше Имя *" class="popup__input"/>
+            <input type="email" placeholder="Email *" class="popup__input"/>
+            <input type="password" placeholder="Пароль *" class="popup__input"/>
+            <input type="password" placeholder="Подтвердите Пароль *" class="popup__input"/>
+            <div class="popup__captcha"><img src="img/captcha.jpg" alt=""/></div>
+            <input type="submit" value="Зарегистрироваться" class="submit-btn"/>
+          </div>
+          <div class="popup--registration__col">
+            <input type="text" placeholder="ФИО *" class="popup__input"/>
+            <input type="text" placeholder="Кому выставить счет (ИП, ООО и т.д.) *" class="popup__input"/>
+            <input type="tel" placeholder="Ваш телефон для связи *" class="popup__input"/>
+            <select class="popup__input popup__input--select">
+              <option value="1">Транспортная компания</option>
+              <option value="2">Транспортная компания 2</option>
+              <option value="3">Транспортная компания 3</option>
+            </select>
+            <div class="popup__agree popup__agree--registration">
+              <label>
+                <input type="checkbox"/>Согласен с условиями
+              </label>
+              <label>
+                <input type="checkbox"/>Подписаться на новости и акции
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/lib/lib.min.js"></script>
     <script src="js/main.min.js"></script>

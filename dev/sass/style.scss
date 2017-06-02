@@ -2,7 +2,7 @@
 @import "_variables.scss";
 @import "_sprite.scss";
 @import "_slick.scss";
-
+@import "_magnific-popup.scss";
 body {
 	font: 400 16px/26px $lora;
 	color: #4c4c4c;
@@ -340,6 +340,27 @@ body {
 		position: relative;
 		top: 0;
 		transition: all .2s ease-in-out;
+		&--discount {
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 60px 60px 0 0;
+				border-color: #d91e5f transparent transparent transparent;
+			}
+			&::after {
+				content: '%';
+				position: absolute;
+				left: 9px;
+				top: 6px;
+				font: 700 18px $lora;
+				color: #fff;
+			}
+		}
 		&:hover {
 			top: -20px;
 			box-shadow: 5px 13px 26px rgba(0,0,0,.15);
@@ -679,11 +700,125 @@ body {
 	}
 }
 
+.popup {
+	background-color: #f1f1f1;
+	max-width: 550px;
+	margin: auto;
+	padding: 100px 100px 70px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .8);
+	position: relative;
+	&--subscribe {
+		&::before {
+			content: '';
+			position: absolute;
+			background: url(../img/subscribe-bg.png) no-repeat;
+			width: 152px;
+			height: 142px;
+			top: -70px;
+			left: 50%;
+			margin-left: -76px;
+		}
+	}
+	&__title {
+		text-align: center;
+		font: 400 28px $denda;
+		color: #363430;
+		margin: 0 0 40px;
+		&--left-aligned {
+			text-align: left;
+		}
+	}
+	&__input {
+		height: 35px;
+		background-color: white;
+		border: 1px solid #e1e1e1;
+		border-radius: 7px;
+		display: block;
+		width: 100%;
+		padding: 0 20px;
+		font: 400 14px $lora;
+		outline: 0;
+		margin-bottom: 10px;
+		&--textarea {
+			height: 125px;
+			padding: 10px 20px;
+			resize: none;
+		}
+		&--select {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			padding: 0 20px;
+			color: #818181;
+			background-image: url(../img/select-arr.png);
+			background-position: right 7px center;
+			background-repeat: no-repeat;
+			cursor: pointer;
+		}
+	}
+	&__agree {
+		padding: 0 30px;
+		margin: 30px 0 20px;
+		&--registration {
+			padding-left: 0;
+		}
+		label {
+			display: block;
+			padding-left: 30px;
+			color: #484848;
+			font: 400 14px $lora;
+			position: relative;
+			padding-left: 20px;
+			margin-bottom: 10px;
+			cursor: pointer;
+		}
+		input {
+			position: absolute;
+			left: 0;
+			top: 2px;
+		}
+	}
+	&__captcha {
+		margin: 20px 0;
+		text-align: center;
+	}
+	&--registration {
+		max-width: 840px;
+		&__row {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__col {
+			width: 48%;
+		}
+	}
+}
+
+.submit-btn {
+	height: 55px;
+	background-color: #8eb8cb;
+	border: 1px solid #759eb1;
+	border-radius: 7px;
+	padding: 0 30px;
+	font: 400 14px $denda;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+	&:hover {
+		background: #5597b4;
+	}
+}
 
 
 
 
 
+.mfp-close-btn-in .mfp-close {
+	color: #d6031a;
+}
 
 
 

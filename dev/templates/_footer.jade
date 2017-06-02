@@ -11,3 +11,59 @@ block footer
 					a(href="#")
 				li(style="background-image: url(img/inst.png)")
 					a(href="#")
+	.popup.mfp-hide.popup--subscribe#subscribe
+		p.popup__title Подпишитесь на Новости
+		.popup__form
+			form
+				input.popup__input(type="text" placeholder="Ваше Имя")
+				input.popup__input(type="email" placeholder="Email")
+				.popup__agree
+					label
+						input(type="checkbox") 
+						| Согласен с условиями
+					label
+						input(type="checkbox") 
+						| Подписаться на новости и акции
+				.aligner
+					input.btn.submit-btn(type="submit" value="Подписаться")
+	.popup.mfp-hide#feedback
+		p.popup__title Обратная связь
+		.popup__form
+			form
+				input.popup__input(type="text" placeholder="Ваше Имя")
+				input.popup__input(type="email" placeholder="Email")
+				input.popup__input(type="email" placeholder="Тема Сообщения")
+				textarea.popup__input.popup__input--textarea(placeholder="Сообщение")
+				.popup__captcha
+					img(src="img/captcha.jpg", alt="")
+				.aligner
+					input.btn.submit-btn(type="submit" value="Отправить")
+	.popup.mfp-hide.popup--registration#registration
+		form
+			p.popup__title.popup__title--left-aligned Регистрация
+			.popup--registration__row
+				.popup--registration__col
+					input.popup__input(type="text" placeholder="Ваше Имя *")
+					input.popup__input(type="email" placeholder="Email *")
+					input.popup__input(type="password" placeholder="Пароль *")
+					input.popup__input(type="password" placeholder="Подтвердите Пароль *")
+					.popup__captcha
+						img(src="img/captcha.jpg", alt="")
+					input.submit-btn(type="submit" value="Зарегистрироваться")
+				.popup--registration__col
+					input.popup__input(type="text" placeholder="ФИО *")
+					input.popup__input(type="text" placeholder="Кому выставить счет (ИП, ООО и т.д.) *")
+					input.popup__input(type="tel" placeholder="Ваш телефон для связи *")
+					select.popup__input.popup__input--select
+						option(value="1") Транспортная компания
+						option(value="2") Транспортная компания 2
+						option(value="3") Транспортная компания 3
+					.popup__agree.popup__agree--registration
+						label
+							input(type="checkbox") 
+							| Согласен с условиями
+						label
+							input(type="checkbox") 
+							| Подписаться на новости и акции
+
+
