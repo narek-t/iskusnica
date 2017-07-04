@@ -33,4 +33,26 @@ $(document).ready(function() {
 		$(this).toggleClass('hidden');
 		$(this).next('.filter__checkboxes').toggleClass('hidden');
 	});
+
+
+
+	$('.order-toggle').click(function(event) {
+		event.preventDefault();
+		$(this).parents('.lk__history-item').toggleClass('opened');
+		$(this).text(function(i, text){
+          return text === "Развернуть" ? "Свернуть" : "Развернуть";
+      	}).toggleClass('opened');
+	});
+
+	$('.lk__tabs a').click(function(event) {
+		event.preventDefault();
+		var index = $(this).data('tab');
+		$('.lk__tab').removeClass('active');
+		$('.lk__tab[data-tab="'+index+'"]').addClass('active');
+		$('.lk__tabs a').removeClass('current-tab');
+		$(this).addClass('current-tab');
+		
+	});
+
+
 });
